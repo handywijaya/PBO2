@@ -1,6 +1,6 @@
 CREATE DATABASE bursaloker;
 
-user bursaloker;
+use bursaloker;
 
 CREATE TABLE users (
 user_id VARCHAR(6) PRIMARY KEY,
