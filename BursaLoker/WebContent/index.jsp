@@ -3,6 +3,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+	
 	<%@include file="header/header.jsp" %>
 	
 	<!-- Calm Breeze -->
@@ -66,10 +67,10 @@
 </div>
 
 <!-- about -->
-      <div class="about spacer" id="about">
+      <div class="" id="about">
         <div class="container">
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6" style="color: black; font-size:12;">
               <h3>About our software</h3>
               <p>Creative digital agency for sleek and sophisticated solutions for mobile, websites and software designs, lead by passionate and uber progressive team that lives and breathes design. Creative digital agency for sleek and sophisticated solutions for mobile, websites and software designs.</p>
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
