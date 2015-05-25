@@ -16,7 +16,7 @@
 		  <ul class="nav navbar-nav navbar-left">
 			<li class="active"><a href="index.jsp">Home<span class="sr-only">(current)</span></a></li>
 			<li><a href="order.jsp">Profile</a></li>
-			<li><a href="tambahProduct.jsp">Inbox</a></li>
+			<li><a href="tambahProduct.jsp">Inbox <span class="badge">42</span></a></li>
 			<li class="dropdown">
 	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Setting <span class="caret"></span></a>
 	          <ul class="dropdown-menu" role="menu">

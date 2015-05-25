@@ -28,11 +28,14 @@
 <body>
 	<%@include file="header/menu.jsp" %>
 	
-	<div class="container" role='main' style='margin-top:70px;'>
+	<div class="container" role='main' style='margin-top:70px;border:solid yellow'>
 	
-	<! -- put your code here -->
-	
+	<!-- -->
 	</div>
+	
+</div>
+	
+	
 	
     
 </body>
