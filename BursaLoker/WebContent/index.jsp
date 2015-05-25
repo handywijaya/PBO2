@@ -32,6 +32,7 @@
 <body>
 	<%@include file="header/menu_login.jsp" %>
 	
+<<<<<<< HEAD
 	<div class="container" role='main' style='margin-top:70px;'>
 	
 	<!-- put your code here -->
@@ -81,6 +82,16 @@
         </div>
       </div>
       <!-- about -->
+=======
+	<div class="container" role='main' style='margin-top:70px;border:solid yellow'>
+	
+	<!-- -->
+	</div>
+	
+</div>
+	
+	
+>>>>>>> 7e9aa4cf6819618fb788605812ac8ab517679940
 	
     
 </body>
