@@ -1582,6 +1582,14 @@ pre code {
   margin-right: auto;
   margin-left: auto;
 }
+
+.container-form-change-password{
+  width:100px;
+  padding-right: 50px;
+  padding-left: 50px;
+  margin-right: auto;
+  margin-left: auto;
+}
 @media (min-width: 768px) {
   .container {
     width: 750px;
