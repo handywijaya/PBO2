@@ -1,0 +1,6 @@
+PBO2 TASK : 
+- Audy : halaman utama, filtering job
+- Handy : bisa nge-post recruitment, liat siapa aja yg nge-apply, bikin bisa apply
+- Mitra : halaman login dan daftar baru
+- Fandy : lihat profile, edit profile
+- Firman : upload CV, ubah password, inbox (terakhir aja)

@@ -19,11 +19,11 @@ public class Posting {
 		
 		while(result.next())
 			ID = result.getString(1);
-		
+
 		if(ID == null) newID = "PS000";
 		else
 		{
-			int post_id = Integer.parseInt(ID.substring(2,3));
+			int post_id = Integer.parseInt(ID.substring(2,ID.length()));
 			post_id++;
 			newID = "PS" + String.format("%3s",post_id).replace(' ','0');
 		}
