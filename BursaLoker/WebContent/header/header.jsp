@@ -25,7 +25,51 @@
 	<script src="js/dataTables.bootstrap.js"></script>
 	
 	<style type="text/css">
-		body { font-size: 140%; }
+		html,body { 
+			
+			margin:0;
+			padding:0;
+			height:100%;
+		}
+		
+		body{
+		font-size: 140%; 
+		background-color:#E9EAED;
+		}
+		
+		#wrapper {
+			min-height:100%;
+			position:relative;
+			margin-bottom:20px;
+		}
+		
+		#footer {
+			width:100%;
+			bottom:0;
+			left:0;
+		}
+		.navbar-brand
+		{
+		    position: absolute;
+		    left: 0;
+		    text-align: center;
+		    margin: auto;
+		    float:none;
+		    width:100%;
+		    z-index:-1;
+		}
+		
+		.dropdown-menu li:hover .sub-menu {
+		    visibility: visible;
+		}
+		
+		.dropdown:hover .dropdown-menu {
+		    display: block;
+		}
+		
+		.noscroll {
+		    overflow: hidden;
+		}
 	</style>
 	
 	
