@@ -41,12 +41,19 @@ tag_id VARCHAR(6) PRIMARY KEY,
 nama_tag VARCHAR(30)
 );
 
+CREATE TABLE tag_jabatan_detil (
+id_detil INT PRIMARY KEY,
+tag_id VARCHAR(6),
+nama_jabatan_detil VARCHAR(50),
+CONSTRAINT fk_tagid_jabatandetil FOREIGN KEY (tag_id) REFERENCES tag_jabatan (tag_id)
+);
+
 CREATE TABLE post_tags (
 post_id VARCHAR(6),
-tag_id VARCHAR(6),
-PRIMARY KEY(post_id, tag_id),
+jabatan_detil_id INT,
+PRIMARY KEY(post_id, jabatan_detil_id),
 CONSTRAINT fk_postid_posttags FOREIGN KEY (post_id) REFERENCES posts (post_id),
-CONSTRAINT fk_tagid_posttags FOREIGN KEY (tag_id) REFERENCES tag_jabatan (tag_id)
+CONSTRAINT fk_tagid_posttags FOREIGN KEY (jabatan_detil_id) REFERENCES tag_jabatan_detil (id_detil)
 );
 
 CREATE TABLE appliers (
@@ -64,10 +71,3 @@ username VARCHAR(20),
 password VARCHAR(255),
 CONSTRAINT fk_userid_login FOREIGN KEY (user_id) REFERENCES users (user_id)
 );
-
-
-CREATE TABLE TAG_JABATAN_DETIL(
-ID_DETIL INT PRIMARY KEY,
-TAG_ID VARCHAR(6),
-NAMA_JABATAN_DETIL VARCHAR(50),
-CONSTRAINT fk_tagid_jabatan_detil FOREIGN KEY (tag_id) REFERENCES tag_jabatan (tag_id));

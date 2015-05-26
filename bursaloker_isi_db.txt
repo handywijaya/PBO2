@@ -1,0 +1,67 @@
+INSERT INTO tag_jabatan VALUES('JB0001','Accounting');
+INSERT INTO tag_jabatan VALUES('JB0002','Admin & HR');
+INSERT INTO tag_jabatan VALUES('JB0003','Banking / Finance');
+INSERT INTO tag_jabatan VALUES('JB0004','Beauty Care / Health');
+INSERT INTO tag_jabatan VALUES('JB0005','Building & Construction');
+INSERT INTO tag_jabatan VALUES('JB0006','Design');
+INSERT INTO tag_jabatan VALUES('JB0007','Education');
+INSERT INTO tag_jabatan VALUES('JB0008','Engineering');
+INSERT INTO tag_jabatan VALUES('JB0009','Hospitality / F & B');
+INSERT INTO tag_jabatan VALUES('JB0010','Information Technology (IT)');
+INSERT INTO tag_jabatan VALUES('JB0011','Insurance');
+INSERT INTO tag_jabatan VALUES('JB0012','Management');
+INSERT INTO tag_jabatan VALUES('JB0013','Marketing / Public Relations');
+INSERT INTO tag_jabatan VALUES('JB0014','Media & Advertising');
+INSERT INTO tag_jabatan VALUES('JB0015','Medical Services');
+INSERT INTO tag_jabatan VALUES('JB0016','Merchandising & Purchasing');
+INSERT INTO tag_jabatan VALUES('JB0017','Professional Services');
+INSERT INTO tag_jabatan VALUES('JB0018','Properti / Real Estate');
+INSERT INTO tag_jabatan VALUES('JB0019','Public / Civil');
+INSERT INTO tag_jabatan VALUES('JB0020','Sales, CS & Business Dept');
+INSERT INTO tag_jabatan VALUES('JB0021','Sciences, Lab, R&D');
+INSERT INTO tag_jabatan VALUES('JB0022','Transportation & Logistics');
+INSERT INTO tag_jabatan VALUES('JB0023','Others');
+
+INSERT INTO tag_jabatan_detil VALUES('TD0001','JB0001','Accountant');
+INSERT INTO tag_jabatan_detil VALUES('TD0002','JB0001','Accounting Consultant');
+INSERT INTO tag_jabatan_detil VALUES('TD0003','JB0010','Software Developer');
+INSERT INTO tag_jabatan_detil VALUES('TD0004','JB0010','Web Developer');
+INSERT INTO tag_jabatan_detil VALUES('TD0005','JB0010','IT Consultant');
+
+INSERT INTO users(user_id,noKTP,first_name,last_name,tgl_lahir,perusahaan,posisi,no_hp) VALUES('US0001','1231241241421','Audy','Tanudjaja','2015-05-13','PT Anabatic Technologies','CPO','158839853');
+INSERT INTO users(user_id,noKTP,first_name,last_name,tgl_lahir,no_hp) VALUES('US0002','1231241241422','Handy','Wijaya','1994-10-21','192783222');
+INSERT INTO users(user_id,noKTP,first_name,last_name,tgl_lahir,no_hp) VALUES('US0003','1231241241423','Fandy','Ferdian','1994-12-01','38227191282');
+
+INSERT INTO login VALUES('US0001','audy',MD5('audy'));
+INSERT INTO login VALUES('US0002','handy',MD5('handy'));
+INSERT INTO login VALUES('US0003','fandy',MD5('fandy'));
+
+INSERT INTO posts(post_id,user_id,description,start_date,end_date) VALUES('PS0001','US0001','Recruiting All Programmers','2015-05-26','2015-05-28');
+INSERT INTO posts(post_id,user_id,description,start_date,end_date) VALUES('PS0002','US0001','Recruiting Some Programmers','2015-05-26','2015-05-28');
+INSERT INTO posts(post_id,user_id,description,start_date,end_date) VALUES('PS0003','US0001','Recruiting All Accountants','2015-05-26','2015-05-28');
+INSERT INTO posts(post_id,user_id,description,start_date,end_date) VALUES('PS0004','US0001','Recruiting All Accountants Again','2015-05-26','2015-05-28');
+INSERT INTO posts(post_id,user_id,description,start_date,end_date) VALUES('PS0005','US0001','Recruiting All Programmers Again','2015-05-26','2015-05-28');
+
+INSERT INTO post_tags VALUES('PS0001','TD0003');
+INSERT INTO post_tags VALUES('PS0001','TD0004');
+INSERT INTO post_tags VALUES('PS0001','TD0005');
+INSERT INTO post_tags VALUES('PS0002','TD0003');
+INSERT INTO post_tags VALUES('PS0002','TD0004');
+INSERT INTO post_tags VALUES('PS0003','TD0001');
+INSERT INTO post_tags VALUES('PS0003','TD0002');
+INSERT INTO post_tags VALUES('PS0004','TD0001');
+INSERT INTO post_tags VALUES('PS0004','TD0002');
+INSERT INTO post_tags VALUES('PS0005','TD0003');
+INSERT INTO post_tags VALUES('PS0005','TD0004');
+INSERT INTO post_tags VALUES('PS0005','TD0005');
+
+INSERT INTO appliers VALUES('US0002','PS0001','2015-05-26');
+INSERT INTO appliers VALUES('US0002','PS0003','2015-05-26');
+INSERT INTO appliers VALUES('US0003','PS0003','2015-05-26');
+INSERT INTO appliers VALUES('US0003','PS0004','2015-05-26');
+INSERT INTO appliers VALUES('US0003','PS0005','2015-05-26');
+
+INSERT INTO inbox VALUES('MS0001','US0001','US0002','Selamat Anda diterima di Recruiting All Programmers','2015-05-26','YES');
+INSERT INTO inbox VALUES('MS0002','US0001','US0003','Selamat Anda diterima di Recruiting All Accountants','2015-05-26','NO');
+INSERT INTO inbox VALUES('MS0003','US0001','US0003','Selamat Anda diterima di Recruiting All Accountants Again','2015-05-26','NO');
+INSERT INTO inbox VALUES('MS0004','US0001','US0003','Selamat Anda diterima di Recruiting All Programmers Again','2015-05-26','NO');
