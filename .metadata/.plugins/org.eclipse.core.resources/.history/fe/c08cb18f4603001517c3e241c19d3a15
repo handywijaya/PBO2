@@ -1,0 +1,41 @@
+package Classes;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class User {
+	
+	static final String DRIVER= "com.mysql.jdbc.Driver";
+    static final String DATABASE_URL= "jdbc:mysql://localhost/bursaloker";
+    static final String USERNAME= "root";
+    static final String PASSWORD= "";
+	
+	public static String getPassword(String userId_) throws SQLException, ClassNotFoundException{
+		String result="";
+        String Query="select password from login where user_id= '" + userId_ + "';";
+        Class.forName(DRIVER); 
+    	System.out.println("Driver Loaded!");
+    	
+    	Connection connection = DriverManager.getConnection(DATABASE_URL,USERNAME,PASSWORD);
+        System.out.println("Database Connected!");
+
+    	Statement statement = connection.createStatement();
+    	ResultSet resultSet = statement.executeQuery(Query);
+    	
+    	while(resultSet.next())
+    	{
+    		result = resultSet.getString(1);
+    	}
+    	return result;
+	}
+	public static String changePassword(String userId_, String oldPass_, String newPass_, String confirmPass_) throws ClassNotFoundException, SQLException{
+		System.out.println(oldPass_ + ". " + getPassword(userId_)+ ". ");
+		if(getPassword(userId_)==oldPass_)
+			return getPassword(userId_);
+		else
+			return "Salah Password";
+	}
+}

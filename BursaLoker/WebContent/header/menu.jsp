@@ -21,8 +21,8 @@
 			<li class="dropdown">
 	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Setting <span class="caret"></span></a>
 	          <ul class="dropdown-menu" role="menu">
-	            <li><a href="#">Edit Profile</a></li>
-	            <li><a href="#">Ubah Password</a></li>
+	            <li><a href="asd">Edit Profile</a></li>
+	            <li><a href="ubah_password.jsp">Ubah Password</a></li>
 	            <li class="divider"></li>
 	            <li><a href="#">Log Out</a></li>
 	          </ul>
