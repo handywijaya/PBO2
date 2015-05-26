@@ -48,6 +48,10 @@
 		}
 	</style>
 	<script>
+<<<<<<< HEAD
+=======
+		
+>>>>>>> 20a2b610499caeb1b2874e6470112a3033c373e6
 		$(function() {
 			var t = $("#content");
 			t.bind('input', function() {

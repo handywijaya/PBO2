@@ -1,0 +1,11 @@
+INDEX VERSION 1.127
+C:\Users\user\Documents\PBO2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2855174640.index
+\BursaLoker\src
+C:\Users\user\Documents\PBO2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3422903998.index
+\BursaLoker\src
+C:\Users\user\Documents\PBO2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1663465133.index
+\Week12_12110110076\src
+C:\Users\user\Documents\PBO2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2267602551.index
+\BursaLoker\src
+C:\Users\user\Documents\PBO2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\644688994.index
+\BursaLoker\src

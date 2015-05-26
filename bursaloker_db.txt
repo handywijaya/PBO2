@@ -64,3 +64,10 @@ username VARCHAR(20),
 password VARCHAR(255),
 CONSTRAINT fk_userid_login FOREIGN KEY (user_id) REFERENCES users (user_id)
 );
+
+
+CREATE TABLE TAG_JABATAN_DETIL(
+ID_DETIL INT PRIMARY KEY,
+TAG_ID VARCHAR(6),
+NAMA_JABATAN_DETIL VARCHAR(50),
+CONSTRAINT fk_tagid_jabatan_detil FOREIGN KEY (tag_id) REFERENCES tag_jabatan (tag_id));
